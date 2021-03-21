@@ -27,7 +27,9 @@ public class BankAccount {
       @param amount the amount of money to withdraw
    */
    public void deposit(double amount) {
-      balance = balance + amount;
+      if(amount > 0) {
+         balance = balance + amount;
+      }
    }
 
    /** 
